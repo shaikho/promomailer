@@ -42,14 +42,14 @@ Promotional Mailer is a Java-based microservice for uploading HTML files and sen
 
 ### Build and Run the Application
 
-1.  Use Maven to compile the application:bashCopy codemvn clean compile
+1.  Use Maven to compile the application using  mvn clean compile
     
-2.  After compiling, you can run the application using the Maven exec plugin:bashCopy codemvn exec:java -Dexec.mainClass=com.promomailer.MicroserviceAppThis will start the server, and you can access the endpoints as described in the API documentation.
+2.  After compiling, you can run the application using the Maven exec plugin:bash mvn exec:java -Dexec.mainClass=com.promomailer.Services.MicroserviceAppThis will start the server, and you can access the endpoints as described in the API documentation.
     
 ### Deploying the Application
 
 To deploy the application, follow these steps:
 
-1.  Create a deployable JAR file using Maven:bashCopy codemvn clean packageThe JAR file will be located in the target directory (e.g., target/promomailer-1.0-SNAPSHOT.jar).
+1.  Create a deployable JAR file using Maven:bash mvn clean packageThe JAR file will be located in the target directory (e.g., target/promomailer-1.0-SNAPSHOT.jar).
     
-2.  You can run the JAR file on the server using the following command:bashCopy codejava -jar target/promomailer-1.0-SNAPSHOT.jarMake sure that the server has Java 1.8 installed.
+2.  You can run the JAR file on the server using the following command:bash java -jar target/promomailer-1.0-SNAPSHOT.jarMake sure that the server has Java 1.8 installed.
