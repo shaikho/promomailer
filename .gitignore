@@ -1,0 +1,8 @@
+# Ignore target directory
+target/
+
+# Other files and directories to ignore
+*.log
+*.tmp
+.DS_Store
+*.class
